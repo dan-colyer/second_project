@@ -1,5 +1,7 @@
 package com.example.daniel.project2;
 
+import android.view.Menu;
+
 import java.util.ArrayList;
 
 /**
@@ -10,10 +12,12 @@ public class Restaurant {
 
     private double budget;
     ArrayList<Table> tables;
+    Menu menu;
 
-    public Restaurant() {
+    public Restaurant(ArrayList<Table> tables, Menu menu) {
         this.budget = 0;
         this.tables = new ArrayList();
+        this.menu = menu;
     }
 
 }
