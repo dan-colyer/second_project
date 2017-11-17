@@ -13,7 +13,7 @@ class Patron {
     private double bill;
     private ArrayList<Orderable> order;
 
-    public Patron(double bill, ArrayList<Orderable> order) {
+    public Patron(ArrayList<Orderable> order) {
         this.bill = 0;
         this.order = new ArrayList();
     }

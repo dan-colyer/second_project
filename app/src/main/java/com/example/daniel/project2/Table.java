@@ -8,11 +8,9 @@ import java.util.ArrayList;
 
 class Table {
 
-    private String tableName;
     private ArrayList<Patron> patrons;
 
-    public Table(String tableName, ArrayList<Patron> patrons) {
-        this.tableName = tableName;
+    public Table(ArrayList<Patron> patrons) {
         this.patrons = new ArrayList();
     }
 
