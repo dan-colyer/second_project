@@ -13,6 +13,6 @@ public class Menu {
     private ArrayList<Orderable> items;
 
     public Menu(ArrayList<Orderable> items) {
-        this.items = new ArrayList();
+        this.items = items;
     }
 }

@@ -11,7 +11,7 @@ class Table {
     private ArrayList<Patron> patrons;
 
     public Table(ArrayList<Patron> patrons) {
-        this.patrons = new ArrayList();
+        this.patrons = patrons;
     }
 
 }

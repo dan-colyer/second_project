@@ -11,12 +11,12 @@ import java.util.ArrayList;
 public abstract class MenuItem implements Orderable {
 
     private ArrayList<Ingredient> ingredients;
-    private String foodName;
+    private String itemName;
     private double price;
 
-    public MenuItem(ArrayList<Ingredient> ingredients, String foodName, double price) {
-        this.ingredients = new ArrayList();
-        this.foodName = foodName;
+    public MenuItem(ArrayList<Ingredient> ingredients, String itemName, double price) {
+        this.ingredients = ingredients;
+        this.itemName = itemName;
         this.price = price;
     }
 }

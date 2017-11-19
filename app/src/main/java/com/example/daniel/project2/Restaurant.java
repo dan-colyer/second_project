@@ -16,7 +16,7 @@ public class Restaurant {
 
     public Restaurant(ArrayList<Table> tables, Menu menu) {
         this.budget = 0;
-        this.tables = new ArrayList();
+        this.tables = tables;
         this.menu = menu;
     }
 

@@ -15,6 +15,6 @@ class Patron {
 
     public Patron(ArrayList<Orderable> order) {
         this.bill = 0;
-        this.order = new ArrayList();
+        this.order = order;
     }
 }
