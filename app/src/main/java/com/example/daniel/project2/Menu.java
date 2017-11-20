@@ -19,7 +19,7 @@ public class Menu {
     public ArrayList<String> getItems() {
         ArrayList<String> itemNames = new ArrayList<>();
         for (Orderable item : items) {
-            itemNames.add(item.toString());
+            itemNames.add(item.getName());
         }
         return itemNames;
     }

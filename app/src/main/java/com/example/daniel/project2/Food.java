@@ -9,8 +9,8 @@ import java.util.ArrayList;
 public class Food extends MenuItem {
     private String course;
 
-    public Food(String course, ArrayList<Ingredient> ingredients, String foodName, double price) {
-        super(ingredients, foodName, price);
+    public Food(String course, ArrayList<Ingredient> ingredients, String name, double price) {
+        super(ingredients, name, price);
         this.course = course;
     }
 

@@ -70,4 +70,10 @@ public class FoodTest {
         String actual = food1.getIngredients().toString();
         assertEquals("[chicken thigh]", actual);
     }
+
+    // Test 5
+    @Test
+    public void testGetName() {
+        assertEquals("roast chicken", food2.getName());
+    }
 }

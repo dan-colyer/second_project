@@ -6,4 +6,5 @@ package com.example.daniel.project2.behaviours;
 
 public interface Orderable {
 
+    public String getName();
 }

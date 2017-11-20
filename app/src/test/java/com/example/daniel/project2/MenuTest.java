@@ -61,7 +61,7 @@ public class MenuTest {
     @Test
     public void testGetItems() {
         ArrayList<String> actual = menu.getItems();
-        assertEquals("?", actual.toString());
+        assertEquals("[fried chicken, roast chicken, prune cocktail]", actual.toString());
     }
 
 }

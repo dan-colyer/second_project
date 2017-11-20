@@ -10,8 +10,8 @@ public class Drink extends MenuItem {
 
     private String volumeMeasure;
 
-    public Drink(ArrayList<Ingredient> ingredients, String foodName, double price, String volumeMeasure) {
-        super(ingredients, foodName, price);
+    public Drink(ArrayList<Ingredient> ingredients, String name, double price, String volumeMeasure) {
+        super(ingredients, name, price);
 
         this.volumeMeasure = volumeMeasure;
     }
