@@ -58,13 +58,13 @@ public class PatronTest {
         menu = new Menu(mainMenu);
 
         ArrayList<Orderable> patron1Order = new ArrayList<>();
+        patron1Order.add(food1);
+        patron1Order.add(drink1);
         patron1 = new Patron(patron1Order);
 
         ArrayList<Orderable> patron2Order = new ArrayList<>();
+        patron2Order.add(food2);
         patron2 = new Patron(patron2Order);
-
-        ArrayList<Orderable> patron3Order = new ArrayList<>();
-        patron3 = new Patron(patron3Order);
 
     }
 

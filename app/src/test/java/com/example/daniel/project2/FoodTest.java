@@ -76,4 +76,10 @@ public class FoodTest {
     public void testGetName() {
         assertEquals("roast chicken", food2.getName());
     }
+
+    // Test 6
+    @Test
+    public void testGetPrice() {
+        assertEquals(10.00, food1.getPrice(), 0.01);
+    }
 }

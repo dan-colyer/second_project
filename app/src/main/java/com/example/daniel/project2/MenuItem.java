@@ -40,5 +40,9 @@ public abstract class MenuItem implements Orderable {
     public String getName() {
         return name;
     }
+
+    public double getPrice() {
+        return price;
+    }
 }
 
