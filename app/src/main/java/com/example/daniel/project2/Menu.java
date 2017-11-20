@@ -24,4 +24,7 @@ public class Menu {
         return itemNames;
     }
 
+    public void addItem(Drink item) {
+        items.add(item);
+    }
 }

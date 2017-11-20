@@ -17,7 +17,7 @@ public class MenuTest {
 
     Ingredient chickenThigh, potato, broccoli, gravy, herbs, vodka, lemon, pruneJuice;
     Food food1, food2;
-    Drink drink1;
+    Drink drink1, drink2;
     Menu menu;
 
     @Before
@@ -62,6 +62,19 @@ public class MenuTest {
     public void testGetItems() {
         ArrayList<String> actual = menu.getItems();
         assertEquals("[fried chicken, roast chicken, prune cocktail]", actual.toString());
+    }
+
+    // Test 2
+    @Test
+    public void testAddItem() {
+        ArrayList<Ingredient> vodkaGravy = new ArrayList<>();
+        vodkaGravy.add(vodka);
+        vodkaGravy.add(gravy);
+        drink2 = new Drink(vodkaGravy, "gravy cocktail", 7.50, "half pint");
+
+        menu.addItem(drink2);
+        ArrayList<String> actual = menu.getItems();
+        assertEquals("[fried chicken, roast chicken, prune cocktail, gravy cocktail]", actual.toString());
     }
 
 }
