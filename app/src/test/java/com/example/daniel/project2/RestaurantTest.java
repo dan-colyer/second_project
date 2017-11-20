@@ -3,8 +3,12 @@ package com.example.daniel.project2;
 import com.example.daniel.project2.behaviours.Orderable;
 
 import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
+
 
 /**
  * Created by Daniel on 17/11/2017.
@@ -12,12 +16,12 @@ import java.util.ArrayList;
 
 public class RestaurantTest {
 
-    Restaurant restaurant;
-    Table table;
+    Restaurant mariosRestaurant;
+    Table table1, table2;
     Patron patron;
-    Ingredient ingredient;
-    Food food;
-    Drink drink;
+    Ingredient chickenThigh, potato, broccoli, gravy, herbs, vodka, lemon, pruneJuice;
+    Food food1, food2;
+    Drink drink1;
     Menu menu;
 
     @Before
@@ -77,7 +81,13 @@ public class RestaurantTest {
         ArrayList<Table> tables = new ArrayList<>();
         tables.add(table1);
         tables.add(table2);
-        Restaurant restaurant = new Restaurant(tables, menu);
+        mariosRestaurant = new Restaurant(tables, menu);
+    }
+
+    // Test 1
+    @Test
+    public void testGetBudget() {
+        assertEquals(0, mariosRestaurant.getBudget(), 0.01);
     }
 }
 

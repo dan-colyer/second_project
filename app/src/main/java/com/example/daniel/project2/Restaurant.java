@@ -12,12 +12,15 @@ public class Restaurant {
 
     private double budget;
     ArrayList<Table> tables;
-    Menu menu;
+    com.example.daniel.project2.Menu menu;
 
-    public Restaurant(ArrayList<Table> tables, Menu menu) {
+    public Restaurant(ArrayList<Table> tables, com.example.daniel.project2.Menu menu) {
         this.budget = 0;
         this.tables = tables;
         this.menu = menu;
     }
 
+    public double getBudget() {
+        return budget;
+    }
 }
