@@ -23,4 +23,9 @@ public class Restaurant {
     public double getBudget() {
         return budget;
     }
+
+
+    public int countTables() {
+        return tables.size();
+    }
 }

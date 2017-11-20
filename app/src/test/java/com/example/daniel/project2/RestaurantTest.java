@@ -89,6 +89,13 @@ public class RestaurantTest {
     public void testGetBudget() {
         assertEquals(0, mariosRestaurant.getBudget(), 0.01);
     }
+
+    // Test 2
+    @Test
+    public void testCountTables() {
+        int actual = mariosRestaurant.countTables();
+        assertEquals(2, actual);
+    }
 }
 
 
