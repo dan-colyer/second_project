@@ -28,4 +28,8 @@ public class Restaurant {
     public int countTables() {
         return tables.size();
     }
+
+    public com.example.daniel.project2.Menu getMenu() {
+        return menu;
+    }
 }

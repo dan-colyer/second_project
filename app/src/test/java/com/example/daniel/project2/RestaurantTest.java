@@ -96,6 +96,12 @@ public class RestaurantTest {
         int actual = mariosRestaurant.countTables();
         assertEquals(2, actual);
     }
+
+    // Test 3
+    @Test
+    public void testGetMenu() {
+        assertEquals(menu, mariosRestaurant.getMenu());
+    }
 }
 
 
