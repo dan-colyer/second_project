@@ -11,14 +11,22 @@ import java.util.ArrayList;
 class Patron {
 
     private double bill;
-    private ArrayList<Orderable> order;
+    private ArrayList<Orderable> orders;
 
     public Patron(ArrayList<Orderable> order) {
         this.bill = 0;
-        this.order = order;
+        this.orders = order;
     }
 
     public double getBill() {
         return bill;
+    }
+
+    public ArrayList<String> getOrders() {
+        ArrayList<String> orderNames = new ArrayList<>();
+        for (Orderable order : orders) {
+            orderNames.add(order.getName());
+        }
+        return orderNames;
     }
 }

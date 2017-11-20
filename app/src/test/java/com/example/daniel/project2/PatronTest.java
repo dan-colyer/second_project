@@ -73,4 +73,11 @@ public class PatronTest {
     public void testGetBill() {
         assertEquals(0, patron1.getBill(), 0.01);
     }
+
+    // Test 2
+    @Test
+    public void testGetOrders() {
+        ArrayList<String> actual = patron1.getOrders();
+        assertEquals("[fried chicken, prune cocktail]", actual.toString());
+    }
 }
