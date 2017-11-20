@@ -17,4 +17,8 @@ class Patron {
         this.bill = 0;
         this.order = order;
     }
+
+    public double getBill() {
+        return bill;
+    }
 }

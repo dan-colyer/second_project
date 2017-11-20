@@ -13,17 +13,18 @@ import static junit.framework.Assert.assertEquals;
  * Created by Daniel on 20/11/2017.
  */
 
-public class MenuTest {
+public class PatronTest {
 
+    Patron patron1, patron2, patron3;
     Ingredient chickenThigh, potato, broccoli, gravy, herbs, vodka, lemon, pruneJuice;
     Food food1, food2;
-    Drink drink1, drink2;
+    Drink drink1;
     Menu menu;
 
     @Before
     public void before() {
 
-        chickenThigh = new Ingredient("chicken thigh");
+        chickenThigh = new Ingredient("chicken thigh") ;
         potato = new Ingredient("potato");
         broccoli = new Ingredient("broccoli");
         gravy = new Ingredient("gravy");
@@ -55,34 +56,21 @@ public class MenuTest {
         mainMenu.add(food2);
         mainMenu.add(drink1);
         menu = new Menu(mainMenu);
+
+        ArrayList<Orderable> patron1Order = new ArrayList<>();
+        patron1 = new Patron(patron1Order);
+
+        ArrayList<Orderable> patron2Order = new ArrayList<>();
+        patron2 = new Patron(patron2Order);
+
+        ArrayList<Orderable> patron3Order = new ArrayList<>();
+        patron3 = new Patron(patron3Order);
+
     }
 
     // Test 1
     @Test
-    public void testGetItems() {
-        ArrayList<String> actual = menu.getItems();
-        assertEquals("[fried chicken, roast chicken, prune cocktail]", actual.toString());
+    public void testGetBill() {
+        assertEquals(0, patron1.getBill(), 0.01);
     }
-
-    // Test 2
-    @Test
-    public void testAddItem() {
-        ArrayList<Ingredient> vodkaGravy = new ArrayList<>();
-        vodkaGravy.add(vodka);
-        vodkaGravy.add(gravy);
-        drink2 = new Drink(vodkaGravy, "gravy cocktail", 7.50, "half pint");
-
-        menu.addItem(drink2);
-        ArrayList<String> actual = menu.getItems();
-        assertEquals("[fried chicken, roast chicken, prune cocktail, gravy cocktail]", actual.toString());
-    }
-
-    // Test 3
-    @Test
-    public void testRemoveItem() {
-        menu.removeItem(drink1);
-        ArrayList<String> actual = menu.getItems();
-        assertEquals("[fried chicken, roast chicken]", actual.toString());
-    }
-
 }
