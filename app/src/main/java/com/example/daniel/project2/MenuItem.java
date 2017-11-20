@@ -19,4 +19,14 @@ public abstract class MenuItem implements Orderable {
         this.itemName = itemName;
         this.price = price;
     }
+
+
+    public ArrayList<String> getIngredients() {
+        ArrayList<String> ingredientNames = new ArrayList<>();
+        for (Ingredient ingredient : ingredients) {
+            ingredientNames.add(ingredient.getName());
+        }
+        return ingredientNames;
+    }
 }
+
