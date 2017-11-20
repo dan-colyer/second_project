@@ -15,4 +15,13 @@ public class Menu {
     public Menu(ArrayList<Orderable> items) {
         this.items = items;
     }
+
+    public ArrayList<String> getItems() {
+        ArrayList<String> itemNames = new ArrayList<>();
+        for (Orderable item : items) {
+            itemNames.add(item.toString());
+        }
+        return itemNames;
+    }
+
 }
