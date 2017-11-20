@@ -77,4 +77,11 @@ public class MenuTest {
         assertEquals("[fried chicken, roast chicken, prune cocktail, gravy cocktail]", actual.toString());
     }
 
+    // Test 3
+    public void testRemoveItem() {
+        menu.removeItem(drink1);
+        ArrayList<String> actual = menu.getItems();
+        assertEquals("[fried chicken, roast chicken]", actual.toString());
+    }
+
 }

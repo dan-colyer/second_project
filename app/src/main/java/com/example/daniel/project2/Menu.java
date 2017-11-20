@@ -24,7 +24,11 @@ public class Menu {
         return itemNames;
     }
 
-    public void addItem(Drink item) {
+    public void addItem(Orderable item) {
         items.add(item);
+    }
+
+    public void removeItem(Orderable item) {
+        items.remove(item);
     }
 }
