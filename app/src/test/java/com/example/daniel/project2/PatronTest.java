@@ -80,4 +80,22 @@ public class PatronTest {
         ArrayList<String> actual = patron1.getOrders();
         assertEquals("[fried chicken, prune cocktail]", actual.toString());
     }
+
+    // Test 3
+    @Test
+    public void testCalculateOrderTotalCost() {
+        double actual = patron1.calculateOrderTotalCost();
+        assertEquals(17.50, actual, 0.01);
+    }
+
+    // Test 4
+    @Test
+    public void testAddToOrder() {
+        patron1.addToOrder(food2);
+        int actual = patron1.getOrders().size();
+        assertEquals(3, actual);
+
+        double actual2 = patron1.calculateOrderTotalCost();
+        assertEquals(29.50, actual2, 0.01);
+    }
 }

@@ -29,4 +29,15 @@ class Patron {
         }
         return orderNames;
     }
+
+    public double calculateOrderTotalCost() {
+        for (Orderable order : orders) {
+            this.bill += order.getPrice();
+        }
+        return this.bill;
+    }
+
+    public void addToOrder(Food item) {
+        orders.add(item);
+    }
 }
