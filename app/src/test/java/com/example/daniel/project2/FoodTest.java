@@ -56,10 +56,18 @@ public class FoodTest {
 
     // Test 3
     @Test
-    public void testAddIngredients() {
+    public void testAddIngredient() {
         Ingredient garlic = new Ingredient("garlic");
-        food1.addIngredients(garlic);
+        food1.addIngredient(garlic);
         String actual = food1.getIngredients().toString();
         assertEquals("[chicken thigh, herbs, garlic]", actual);
+    }
+
+    // Test 4
+    @Test
+    public void testRemoveIngredient() {
+        food1.removeIngredient(herbs);
+        String actual = food1.getIngredients().toString();
+        assertEquals("[chicken thigh]", actual);
     }
 }

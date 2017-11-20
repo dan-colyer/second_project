@@ -29,8 +29,12 @@ public abstract class MenuItem implements Orderable {
         return ingredientNames;
     }
 
-    public void addIngredients(Ingredient item) {
+    public void addIngredient(Ingredient item) {
         ingredients.add(item);
+    }
+
+    public void removeIngredient(Ingredient item) {
+        ingredients.remove(item);
     }
 }
 
