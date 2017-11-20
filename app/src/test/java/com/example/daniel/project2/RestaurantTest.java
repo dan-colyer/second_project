@@ -102,6 +102,21 @@ public class RestaurantTest {
     public void testGetMenu() {
         assertEquals(menu, mariosRestaurant.getMenu());
     }
+
+    // Test 4
+    @Test
+    public void testAddTables() {
+        ArrayList<Orderable> patron4Order = new ArrayList<>();
+        Patron patron4 = new Patron(patron4Order);
+        ArrayList<Patron> table3Patrons = new ArrayList<>();
+        table3Patrons.add(patron4);
+
+        Table table3 = new Table(table3Patrons);
+
+        mariosRestaurant.tables.add(table3);
+
+        assertEquals(3, mariosRestaurant.countTables());
+    }
 }
 
 
