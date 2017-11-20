@@ -14,4 +14,7 @@ public class Food extends MenuItem {
         this.course = course;
     }
 
+    public String getCourse() {
+        return course;
+    }
 }
