@@ -15,4 +15,8 @@ public class Drink extends MenuItem {
 
         this.volumeMeasure = volumeMeasure;
     }
+
+    public String getVolumeMeasure() {
+        return volumeMeasure;
+    }
 }
