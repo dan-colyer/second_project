@@ -49,6 +49,7 @@ class Patron {
 
     public void clearBill() {
         orders.clear();
+        this.bill = 0;
     }
 
     public String getName() {

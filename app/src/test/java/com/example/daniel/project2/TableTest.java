@@ -114,15 +114,15 @@ public class TableTest {
     }
 
     // Table 6
-//    @Test
-//    public void testCalculateTableBillOnePersonPaying() {
-//        double actual = table1.calculateTableBillOnePersonPaying(patron1);
-//        double actual2 = patron1.getBill();
-//        double actual3 = patron2.getBill();
-//
-//        assertEquals(29.50, actual, 0.01);
-//        assertEquals(29.50, actual2, 0.01);
-//        assertEquals(0, actual3, 0.01);
-//
-//    }
+    @Test
+    public void testCalculateTableBillOnePersonPaying() {
+        double actual = table1.calculateTableBillOnePersonPaying(patron1);
+        double actual2 = patron1.getBill();
+        double actual3 = patron2.getBill();
+
+        assertEquals(29.50, actual, 0.01);
+        assertEquals(29.50, actual2, 0.01);
+        assertEquals(0, actual3, 0.01);
+
+    }
 }

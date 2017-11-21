@@ -44,7 +44,14 @@ class Table {
         patrons.clear();
     }
 
-//    public double calculateTableBillOnePersonPaying(Patron patron) {
-//
-//    }
+    public double calculateTableBillOnePersonPaying(Patron patron) {
+
+        double onePayer = calculateTableBill();
+
+        for (Patron eachPatron : patrons) {
+            eachPatron.clearBill();
+        }
+        patron.setBill(onePayer);
+        return patron.getBill();
+    }
 }
