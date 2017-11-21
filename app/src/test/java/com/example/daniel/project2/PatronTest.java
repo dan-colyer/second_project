@@ -98,4 +98,12 @@ public class PatronTest {
         double actual2 = patron1.calculateOrderTotalCost();
         assertEquals(29.50, actual2, 0.01);
     }
+
+    // Test 5
+    @Test
+    public void testRemoveFromOrder() {
+        patron1.removeFromOrder(food1);
+        int actual = patron1.getOrders().size();
+        assertEquals(1, actual);
+    }
 }

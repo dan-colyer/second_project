@@ -37,7 +37,11 @@ class Patron {
         return this.bill;
     }
 
-    public void addToOrder(Food item) {
+    public void addToOrder(Orderable item) {
         orders.add(item);
+    }
+
+    public void removeFromOrder(Orderable item) {
+        orders.remove(item);
     }
 }
