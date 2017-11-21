@@ -31,4 +31,12 @@ class Table {
     public void removePatronFromTable(Patron patron) {
         patrons.remove(patron);
     }
+
+    public double calculateTableBill() {
+        double tableBill = 0;
+        for (Patron bill : patrons) {
+            tableBill += bill.calculateOrderTotalCost();
+        }
+        return tableBill;
+    }
 }

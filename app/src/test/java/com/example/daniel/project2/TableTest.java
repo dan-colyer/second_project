@@ -98,4 +98,11 @@ public class TableTest {
         table1.removePatronFromTable(patron2);
         assertEquals(1, table1.getPatrons().size());
     }
+
+    // Test 4
+    @Test
+    public void testCalculateTableBill() {
+        double actual = table1.calculateTableBill();
+        assertEquals(29.50, actual, 0.01);
+    }
 }
