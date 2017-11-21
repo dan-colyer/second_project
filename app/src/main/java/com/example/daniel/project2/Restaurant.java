@@ -36,5 +36,6 @@ public class Restaurant {
     public void tablePays(Table table) {
         double tableBill = table.calculateTableBill();
         this.budget += tableBill;
+        table.clearTable();
     }
 }
