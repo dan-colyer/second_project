@@ -61,13 +61,13 @@ public class RestaurantTest {
         menu = new Menu(mainMenu);
 
         ArrayList<Orderable> patron1Order = new ArrayList<>();
-        patron1 = new Patron(patron1Order);
+        patron1 = new Patron(patron1Order, "patron1");
 
         ArrayList<Orderable> patron2Order = new ArrayList<>();
-        patron2 = new Patron(patron2Order);
+        patron2 = new Patron(patron2Order, "patron2");
 
         ArrayList<Orderable> patron3Order = new ArrayList<>();
-        patron3 = new Patron(patron3Order);
+        patron3 = new Patron(patron3Order, "patron3");
 
         ArrayList<Patron> table1Patrons = new ArrayList<>();
         table1Patrons.add(patron1);
@@ -107,7 +107,7 @@ public class RestaurantTest {
     @Test
     public void testAddTables() {
         ArrayList<Orderable> patron4Order = new ArrayList<>();
-        Patron patron4 = new Patron(patron4Order);
+        Patron patron4 = new Patron(patron4Order, "patron4");
         ArrayList<Patron> table3Patrons = new ArrayList<>();
         table3Patrons.add(patron4);
 

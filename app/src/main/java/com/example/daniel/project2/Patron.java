@@ -12,10 +12,12 @@ class Patron {
 
     private double bill;
     private ArrayList<Orderable> orders;
+    private String name;
 
-    public Patron(ArrayList<Orderable> order) {
+    public Patron(ArrayList<Orderable> orders, String name) {
         this.bill = 0;
-        this.orders = order;
+        this.orders = orders;
+        this.name = name;
     }
 
     public double getBill() {
@@ -47,5 +49,9 @@ class Patron {
 
     public void clearBill() {
         orders.clear();
+    }
+
+    public String getName() {
+        return name;
     }
 }
