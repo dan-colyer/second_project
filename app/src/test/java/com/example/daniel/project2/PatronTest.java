@@ -117,7 +117,15 @@ public class PatronTest {
 
     // Test 7
     @Test
-    public void getName() {
+    public void testGetName() {
         assertEquals("patron2", patron2.getName());
+    }
+
+    // Test 8
+    @Test
+    public void testSetBill() {
+        patron1.setBill(117.50);
+        double actual = patron1.getBill();
+        assertEquals(117.50, actual, 0.01);
     }
 }

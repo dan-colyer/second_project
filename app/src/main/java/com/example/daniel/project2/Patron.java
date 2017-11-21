@@ -54,4 +54,8 @@ class Patron {
     public String getName() {
         return name;
     }
+
+    public void setBill(double amount) {
+        this.bill += amount;
+    }
 }

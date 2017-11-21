@@ -43,4 +43,8 @@ class Table {
     public void clearTable() {
         patrons.clear();
     }
+
+//    public double calculateTableBillOnePersonPaying(Patron patron) {
+//
+//    }
 }
