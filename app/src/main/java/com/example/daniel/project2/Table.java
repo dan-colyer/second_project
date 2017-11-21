@@ -16,12 +16,12 @@ class Table {
         this.patrons = patrons;
     }
 
-//        public ArrayList<String> getPatrons() {
-//            ArrayList<String> patronList = new ArrayList<>();
-//            for (Patron patron : patrons) {
-//                patronList.add(patron);
-//            }
-//            return patronList;
-//        }
+        public ArrayList<String> getPatrons() {
+            ArrayList<String> patronList = new ArrayList<>();
+            for (Patron patron : patrons) {
+                patronList.add(patron.getName());
+            }
+            return patronList;
+        }
 
 }

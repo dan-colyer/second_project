@@ -79,10 +79,10 @@ public class TableTest {
     }
 
     // Test 1
-//    @Test
-//    public void testGetPatrons() {
-//        ArrayList<String> actual = table1.getPatrons();
-//        assertEquals("[patron1, patron2]", actual.toString());
-//
-//    }
+    @Test
+    public void testGetPatrons() {
+        ArrayList<String> actual = table1.getPatrons();
+        assertEquals("[patron1, patron2]", actual.toString());
+
+    }
 }
