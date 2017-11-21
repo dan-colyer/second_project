@@ -39,4 +39,8 @@ class Table {
         }
         return tableBill;
     }
+
+    public void clearTable() {
+        patrons.clear();
+    }
 }

@@ -105,4 +105,11 @@ public class TableTest {
         double actual = table1.calculateTableBill();
         assertEquals(29.50, actual, 0.01);
     }
+
+    // Test 5
+    @Test
+    public void testClearTable() {
+        table1.clearTable();
+        assertEquals(0, table1.getPatrons().size());
+    }
 }
