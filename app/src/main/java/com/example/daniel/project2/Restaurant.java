@@ -32,4 +32,9 @@ public class Restaurant {
     public com.example.daniel.project2.Menu getMenu() {
         return menu;
     }
+
+    public void tablePays(Table table) {
+        double tableBill = table.calculateTableBill();
+        this.budget += tableBill;
+    }
 }

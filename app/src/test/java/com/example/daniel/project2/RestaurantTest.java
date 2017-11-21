@@ -61,9 +61,12 @@ public class RestaurantTest {
         menu = new Menu(mainMenu);
 
         ArrayList<Orderable> patron1Order = new ArrayList<>();
+        patron1Order.add(food1);
+        patron1Order.add(drink1);
         patron1 = new Patron(patron1Order, "patron1");
 
         ArrayList<Orderable> patron2Order = new ArrayList<>();
+        patron2Order.add(food2);
         patron2 = new Patron(patron2Order, "patron2");
 
         ArrayList<Orderable> patron3Order = new ArrayList<>();
@@ -116,6 +119,14 @@ public class RestaurantTest {
         mariosRestaurant.tables.add(table3);
 
         assertEquals(3, mariosRestaurant.countTables());
+    }
+
+    // Test 5
+    @Test
+    public void testTablePays() {
+        mariosRestaurant.tablePays(table1);
+        double actual = mariosRestaurant.getBudget();
+        assertEquals(29.50, actual, 0.01);
     }
 }
 
