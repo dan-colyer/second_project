@@ -91,4 +91,11 @@ public class TableTest {
         table1.addPatronToTable(patron3);
         assertEquals(3, table1.getPatrons().size());
     }
+
+    // Test 3
+    @Test
+    public void testRemovePatronFromTable() {
+        table1.removePatronFromTable(patron2);
+        assertEquals(1, table1.getPatrons().size());
+    }
 }
