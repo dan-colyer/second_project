@@ -106,4 +106,12 @@ public class PatronTest {
         int actual = patron1.getOrders().size();
         assertEquals(1, actual);
     }
+
+    // Test 6
+    @Test
+    public void testClearBill() {
+        patron1.clearBill();
+        double actual = patron1.calculateOrderTotalCost();
+        assertEquals(0, actual, 0.01);
+    }
 }

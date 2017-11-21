@@ -44,4 +44,8 @@ class Patron {
     public void removeFromOrder(Orderable item) {
         orders.remove(item);
     }
+
+    public void clearBill() {
+        orders.clear();
+    }
 }
