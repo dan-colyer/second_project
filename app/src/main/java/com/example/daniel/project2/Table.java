@@ -24,4 +24,7 @@ class Table {
             return patronList;
         }
 
+    public void addPatronToTable(Patron patron) {
+        patrons.add(patron);
+    }
 }

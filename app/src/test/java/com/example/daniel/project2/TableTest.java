@@ -83,6 +83,12 @@ public class TableTest {
     public void testGetPatrons() {
         ArrayList<String> actual = table1.getPatrons();
         assertEquals("[patron1, patron2]", actual.toString());
+    }
 
+    // Test 2
+    @Test
+    public void testAddPatronToTable() {
+        table1.addPatronToTable(patron3);
+        assertEquals(3, table1.getPatrons().size());
     }
 }
