@@ -50,7 +50,8 @@ public class Kitchen {
         pantry.remove(ingredient);
     }
 
-//    public void reduceAmountByOne(Ingredient ingredient) {
-//        pantry.
-//    }
+    public void reduceAmountByOne(Ingredient ingredient) {
+        int test = getIngredientQuantity(ingredient) - 1;
+        ingredient.setQuantity(test);
+    }
 }

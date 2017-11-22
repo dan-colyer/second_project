@@ -99,10 +99,10 @@ public class KitchenTest {
     }
 
     // Test 6
-//    @Test
-//    public void testAddToOrderReducesIngredientsStock() {
-//        kitchen.reduceAmountByOne(chickenThigh);
-//
-//        assertEquals(4, kitchen.getIngredientQuantity(chickenThigh));
-//    }
+    @Test
+    public void testAddToOrderReducesIngredientsStock() {
+        kitchen.reduceAmountByOne(chickenThigh);
+
+        assertEquals(4, kitchen.getIngredientQuantity(chickenThigh));
+    }
 }
