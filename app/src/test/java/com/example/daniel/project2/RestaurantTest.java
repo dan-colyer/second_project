@@ -23,6 +23,7 @@ public class RestaurantTest {
     Food food1, food2;
     Drink drink1;
     Menu menu;
+    Kitchen kitchen;
 
     @Before
     public void before() {
@@ -35,6 +36,17 @@ public class RestaurantTest {
         vodka = new Ingredient("vodka", 5);
         lemon = new Ingredient("lemon", 5);
         pruneJuice = new Ingredient("prune juice", 5);
+
+        ArrayList<Ingredient> ingredients = new ArrayList<>();
+        ingredients.add(chickenThigh);
+        ingredients.add(potato);
+        ingredients.add(broccoli);
+        ingredients.add(gravy);
+        ingredients.add(herbs);
+        ingredients.add(vodka);
+        ingredients.add(lemon);
+        ingredients.add(pruneJuice);
+        kitchen = new Kitchen(ingredients);
 
         ArrayList<Ingredient> fryChicken = new ArrayList<>();
         fryChicken.add(chickenThigh);
@@ -84,7 +96,7 @@ public class RestaurantTest {
         ArrayList<Table> tables = new ArrayList<>();
         tables.add(table1);
         tables.add(table2);
-        mariosRestaurant = new Restaurant(tables, menu);
+        mariosRestaurant = new Restaurant(tables, menu, kitchen);
     }
 
     // Test 1

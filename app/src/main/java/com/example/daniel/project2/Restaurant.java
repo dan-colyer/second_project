@@ -15,11 +15,13 @@ public class Restaurant {
     private double budget;
     ArrayList<Table> tables;
     com.example.daniel.project2.Menu menu;
+    private Kitchen kitchen;
 
-    public Restaurant(ArrayList<Table> tables, com.example.daniel.project2.Menu menu) {
+    public Restaurant(ArrayList<Table> tables, com.example.daniel.project2.Menu menu, Kitchen kitchen) {
         this.budget = 0;
         this.tables = tables;
         this.menu = menu;
+        this.kitchen = kitchen;
     }
 
     public double getBudget() {
