@@ -134,7 +134,15 @@ public class RestaurantTest {
     public void testTableEmptyAfterTablePays() {
         mariosRestaurant.tablePays(table1);
         assertEquals(0, table1.getPatrons().size(), 0.01);
+    }
 
+    // Test 7
+    @Test
+    public void testPatronPaysForTable() {
+        mariosRestaurant.patronPaysForTable(table1, patron1);
+        double actual = mariosRestaurant.getBudget();
+        assertEquals(29.50, actual, 0.01);
+        assertEquals(0, table1.getPatrons().size());
     }
 }
 

@@ -113,7 +113,7 @@ public class TableTest {
         assertEquals(0, table1.getPatrons().size());
     }
 
-    // Table 6
+    // Test 6
     @Test
     public void testCalculateTableBillOnePersonPaying() {
         double actual = table1.calculateTableBillOnePersonPaying(patron1);

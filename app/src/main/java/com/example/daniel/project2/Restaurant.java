@@ -38,4 +38,10 @@ public class Restaurant {
         this.budget += tableBill;
         table.clearTable();
     }
+
+    public void patronPaysForTable(Table table, Patron patron) {
+        double patronTableBill = table.calculateTableBillOnePersonPaying(patron);
+        this.budget += patronTableBill;
+        table.clearTable();
+    }
 }
