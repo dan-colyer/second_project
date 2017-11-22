@@ -32,4 +32,13 @@ public class Kitchen {
         }
         return ingredientNames;
     }
+
+    public int getIngredientQuantity(Ingredient ingredient) {
+        for (Ingredient item : pantry) {
+            if (item == ingredient) {
+                return item.getQuantity();
+            }
+        }
+        return 0;
+    }
 }

@@ -75,4 +75,11 @@ public class KitchenTest {
         ArrayList<String> actual = kitchen.getPantryWithQuantities();
         assertEquals("[chicken thigh: 5, potato: 5, broccoli: 5, gravy: 5, herbs: 5, vodka: 5, lemon: 5, prune juice: 5]", actual.toString());
     }
+
+    // Test 3
+    @Test
+    public void testGetIngredientQuantity() {
+        int actual = kitchen.getIngredientQuantity(chickenThigh);
+        assertEquals(5, actual);
+    }
 }
