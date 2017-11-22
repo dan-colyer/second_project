@@ -16,8 +16,8 @@ public class IngedientTest {
     @Before
     public void before() {
 
-        chickenThigh = new Ingredient("chicken thigh");
-        potato = new Ingredient("potato");
+        chickenThigh = new Ingredient("chicken thigh", 5);
+        potato = new Ingredient("potato", 5);
     }
 
 
@@ -25,5 +25,11 @@ public class IngedientTest {
     @Test
     public void testGetName() {
         assertEquals("chicken thigh", chickenThigh.getName());
+    }
+
+    // Test 2
+    @Test
+    public void testGetQuantity() {
+        assertEquals(5, chickenThigh.getQuantity());
     }
 }

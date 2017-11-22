@@ -23,14 +23,14 @@ public class MenuTest {
     @Before
     public void before() {
 
-        chickenThigh = new Ingredient("chicken thigh");
-        potato = new Ingredient("potato");
-        broccoli = new Ingredient("broccoli");
-        gravy = new Ingredient("gravy");
-        herbs = new Ingredient("herbs");
-        vodka = new Ingredient("vodka");
-        lemon = new Ingredient("lemon");
-        pruneJuice = new Ingredient("prune juice");
+        chickenThigh = new Ingredient("chicken thigh", 5) ;
+        potato = new Ingredient("potato", 5);
+        broccoli = new Ingredient("broccoli", 5);
+        gravy = new Ingredient("gravy", 5);
+        herbs = new Ingredient("herbs", 5);
+        vodka = new Ingredient("vodka", 5);
+        lemon = new Ingredient("lemon", 5);
+        pruneJuice = new Ingredient("prune juice", 5);
 
         ArrayList<Ingredient> fryChicken = new ArrayList<>();
         fryChicken.add(chickenThigh);

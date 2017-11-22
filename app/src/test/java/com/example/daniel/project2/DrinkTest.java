@@ -19,9 +19,9 @@ public class DrinkTest {
     @Before
     public void before() {
 
-        vodka = new Ingredient("vodka");
-        lemon = new Ingredient("lemon");
-        pruneJuice = new Ingredient("prune juice");
+        vodka = new Ingredient("vodka", 5);
+        lemon = new Ingredient("lemon", 5);
+        pruneJuice = new Ingredient("prune juice", 5);
 
         ArrayList<Ingredient> vodkaPrune = new ArrayList<>();
         vodkaPrune.add(vodka);
