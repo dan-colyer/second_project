@@ -82,4 +82,12 @@ public class KitchenTest {
         int actual = kitchen.getIngredientQuantity(chickenThigh);
         assertEquals(5, actual);
     }
+
+    // Test 4
+    @Test
+    public void testAddIngredientToPantry() {
+        Ingredient testIngredient = new Ingredient("test", 1);
+        kitchen.addIngredientToPantry(testIngredient);
+        assertEquals(9, kitchen.getPantry().size());
+    }
 }

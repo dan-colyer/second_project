@@ -41,4 +41,8 @@ public class Kitchen {
         }
         return 0;
     }
+
+    public void addIngredientToPantry(Ingredient ingredient) {
+        pantry.add(ingredient);
+    }
 }
