@@ -97,4 +97,12 @@ public class KitchenTest {
         kitchen.removeIngredientFromPantry(chickenThigh);
         assertEquals(7, kitchen.getPantry().size());
     }
+
+    // Test 6
+//    @Test
+//    public void testAddToOrderReducesIngredientsStock() {
+//        kitchen.reduceAmountByOne(chickenThigh);
+//
+//        assertEquals(4, kitchen.getIngredientQuantity(chickenThigh));
+//    }
 }

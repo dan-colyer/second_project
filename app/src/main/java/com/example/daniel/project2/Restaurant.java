@@ -2,6 +2,8 @@ package com.example.daniel.project2;
 
 import android.view.Menu;
 
+import com.example.daniel.project2.behaviours.Orderable;
+
 import java.util.ArrayList;
 
 /**
@@ -38,6 +40,16 @@ public class Restaurant {
         this.budget += tableBill;
         table.clearTable();
     }
+
+//    public void addPatronOrder(Patron patron, Orderable order) {
+//        ArrayList<String> ingred = order.getIngredients();
+//
+//        for(String name : ingred) {
+//            this.kitchen.reduceAmountByOne(name);
+//
+//        }
+//        patron.addToOrder(order);
+//    }
 
     public void patronPaysForTable(Table table, Patron patron) {
         double patronTableBill = table.calculateTableBillOnePersonPaying(patron);

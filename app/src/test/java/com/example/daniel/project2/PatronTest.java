@@ -20,6 +20,7 @@ public class PatronTest {
     Food food1, food2;
     Drink drink1;
     Menu menu;
+    Kitchen kitchen;
 
     @Before
     public void before() {
@@ -32,6 +33,17 @@ public class PatronTest {
         vodka = new Ingredient("vodka", 5);
         lemon = new Ingredient("lemon", 5);
         pruneJuice = new Ingredient("prune juice", 5);
+
+        ArrayList<Ingredient> ingredients = new ArrayList<>();
+        ingredients.add(chickenThigh);
+        ingredients.add(potato);
+        ingredients.add(broccoli);
+        ingredients.add(gravy);
+        ingredients.add(herbs);
+        ingredients.add(vodka);
+        ingredients.add(lemon);
+        ingredients.add(pruneJuice);
+        kitchen = new Kitchen(ingredients);
 
         ArrayList<Ingredient> fryChicken = new ArrayList<>();
         fryChicken.add(chickenThigh);
@@ -65,7 +77,6 @@ public class PatronTest {
         ArrayList<Orderable> patron2Order = new ArrayList<>();
         patron2Order.add(food2);
         patron2 = new Patron(patron2Order, "patron2");
-
     }
 
     // Test 1
@@ -129,21 +140,5 @@ public class PatronTest {
         assertEquals(117.50, actual, 0.01);
     }
 
-//    @Test
-//    public void testCustomMenuItem() {
-//        patron1.customMenuItem(food1);
 
-//        new Food food1a
-//        set food1a = food1
-//        remove ingredient from food1a
-//        add ingredients to food1a
-//        add to order (food1a)
-
-
-//        copy(food1)
-//        new food1a
-//        set food1a = food1
-//        return food1a
-
-//    }
 }

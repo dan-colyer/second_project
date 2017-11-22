@@ -32,4 +32,11 @@ public class IngedientTest {
     public void testGetQuantity() {
         assertEquals(5, chickenThigh.getQuantity());
     }
+
+    // Test 3
+    @Test
+    public void testSetQuantity() {
+        chickenThigh.setQuantity(4);
+        assertEquals(4, chickenThigh.getQuantity());
+    }
 }
