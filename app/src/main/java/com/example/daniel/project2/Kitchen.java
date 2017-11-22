@@ -45,4 +45,8 @@ public class Kitchen {
     public void addIngredientToPantry(Ingredient ingredient) {
         pantry.add(ingredient);
     }
+
+    public void removeIngredientFromPantry(Ingredient ingredient) {
+        pantry.remove(ingredient);
+    }
 }

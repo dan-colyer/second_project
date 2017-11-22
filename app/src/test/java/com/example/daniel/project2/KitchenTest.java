@@ -90,4 +90,11 @@ public class KitchenTest {
         kitchen.addIngredientToPantry(testIngredient);
         assertEquals(9, kitchen.getPantry().size());
     }
+
+    // Test 5
+    @Test
+    public void testRemoveIngredientFromPantry() {
+        kitchen.removeIngredientFromPantry(chickenThigh);
+        assertEquals(7, kitchen.getPantry().size());
+    }
 }
