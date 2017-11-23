@@ -21,12 +21,16 @@ public abstract class MenuItem implements Orderable {
     }
 
 
-    public ArrayList<String> getIngredients() {
+    public ArrayList<String> getIngredientsNames() {
         ArrayList<String> ingredientNames = new ArrayList<>();
         for (Ingredient ingredient : ingredients) {
             ingredientNames.add(ingredient.getName());
         }
         return ingredientNames;
+    }
+
+    public ArrayList<Ingredient> getIngredients() {
+        return new ArrayList<Ingredient>(ingredients);
     }
 
     public void addIngredient(Ingredient item) {

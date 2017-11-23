@@ -12,5 +12,6 @@ public interface Orderable {
 
     String getName();
     double getPrice();
-    ArrayList<String> getIngredients();
+    ArrayList<String> getIngredientsNames();
+    ArrayList<Ingredient> getIngredients();
 }

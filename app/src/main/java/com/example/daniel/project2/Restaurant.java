@@ -43,15 +43,15 @@ public class Restaurant {
         table.clearTable();
     }
 
-//    public void addPatronOrder(Patron patron, Orderable order) {
-//        ArrayList<String> ingred = order.getIngredients();
-//
-//        for(String name : ingred) {
-//            this.kitchen.reduceAmountByOne(name);
-//
-//        }
-//        patron.addToOrder(order);
-//    }
+    public void finalisePatronOrder(Patron patron, Orderable order) {
+        ArrayList<Ingredient> orderIngredients = order.getIngredients();
+
+        for(Ingredient eachIngredient : orderIngredients) {
+            this.kitchen.reduceAmountByOne(eachIngredient);
+
+        }
+        patron.addToOrder(order);
+    }
 
     public void patronPaysForTable(Table table, Patron patron) {
         double patronTableBill = table.calculateTableBillOnePersonPaying(patron);

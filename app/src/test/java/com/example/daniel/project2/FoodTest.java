@@ -50,7 +50,7 @@ public class FoodTest {
     // Test 2
     @Test
     public void testGetIngredients() {
-        ArrayList<String> actual = food1.getIngredients();
+        ArrayList<String> actual = food1.getIngredientsNames();
         assertEquals("[chicken thigh, herbs]", actual.toString());
     }
 
@@ -59,7 +59,7 @@ public class FoodTest {
     public void testAddIngredient() {
         Ingredient garlic = new Ingredient("garlic", 5);
         food1.addIngredient(garlic);
-        String actual = food1.getIngredients().toString();
+        String actual = food1.getIngredientsNames().toString();
         assertEquals("[chicken thigh, herbs, garlic]", actual);
     }
 
@@ -67,7 +67,7 @@ public class FoodTest {
     @Test
     public void testRemoveIngredient() {
         food1.removeIngredient(herbs);
-        String actual = food1.getIngredients().toString();
+        String actual = food1.getIngredientsNames().toString();
         assertEquals("[chicken thigh]", actual);
     }
 

@@ -156,6 +156,14 @@ public class RestaurantTest {
         assertEquals(29.50, actual, 0.01);
         assertEquals(0, table1.getPatrons().size());
     }
+
+    //     Test 8
+    @Test
+    public void testFinalisePatronOrder() {
+        mariosRestaurant.finalisePatronOrder(patron1, food2);
+        assertEquals(4, kitchen.getIngredientQuantity(chickenThigh));
+        assertEquals(3, patron1.getOrders().size());
+    }
 }
 
 
