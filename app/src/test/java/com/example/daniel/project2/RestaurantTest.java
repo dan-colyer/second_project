@@ -157,7 +157,7 @@ public class RestaurantTest {
         assertEquals(0, table1.getPatrons().size());
     }
 
-    //     Test 8
+    // Test 8
     @Test
     public void testFinalisePatronOrder() {
         mariosRestaurant.finalisePatronOrder(patron1, food2);

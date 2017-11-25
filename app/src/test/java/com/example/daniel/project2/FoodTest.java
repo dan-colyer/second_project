@@ -49,9 +49,15 @@ public class FoodTest {
 
     // Test 2
     @Test
-    public void testGetIngredients() {
+    public void testGetIngredientsNames() {
         ArrayList<String> actual = food1.getIngredientsNames();
         assertEquals("[chicken thigh, herbs]", actual.toString());
+    }
+
+    // Test 2 v2
+    @Test
+    public void testGetIngredients() {
+        assertEquals(2, food1.getIngredients().size());
     }
 
     // Test 3
